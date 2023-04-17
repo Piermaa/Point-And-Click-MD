@@ -67,7 +67,7 @@ public class TW_MultiStrings_Regular_Editor : Editor
 public class TextCollection
 {
     [Tooltip("Texto con el que se accede a esta coleccion de strings")]public string tag;
-    public string[] MultiStrings = new string[1];
+    public string[] texts = new string[1];
 }
 
 public class TW_MultiStrings_Regular : MonoBehaviour {
@@ -128,7 +128,7 @@ public class TW_MultiStrings_Regular : MonoBehaviour {
     public void StartTypewriter(string key)
     {
         textsDic.TryGetValue(key, out var textCollection);
-        MultiStrings = textCollection.MultiStrings;
+        MultiStrings = textCollection.texts;
         index_of_string = 0;
         NextString();
         start = true;

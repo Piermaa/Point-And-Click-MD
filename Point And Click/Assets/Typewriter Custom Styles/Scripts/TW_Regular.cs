@@ -34,6 +34,8 @@ public class TW_Regular_Editor : Editor
 
 public class TW_Regular : MonoBehaviour {
 
+    public Action OnFinishAction;
+
     public bool LaunchOnStart = true;
     public int timeOut = 1;
     [HideInInspector]
@@ -61,6 +63,13 @@ public class TW_Regular : MonoBehaviour {
         }
     }
 
+    public void SetAndStart(string p_text)
+    {
+        
+        ORIGINAL_TEXT = p_text;
+        StartTypewriter();
+    }
+
     public void StartTypewriter()
     {
         start = true;
@@ -74,8 +83,13 @@ public class TW_Regular : MonoBehaviour {
 
     private void NewLineCheck(string S)
     {
-        if (S.Contains("\n")){
+        if (S.Contains("\n")) {
             StartCoroutine(MakeTypewriterTextWithNewLine(S, GetPointerSymbol(), MakeList(S)));
+        }
+        else if (S.Contains("ㅤ"))
+        {
+
+            StartCoroutine(MakeTypewriterTextEventAtEnd(S, GetPointerSymbol()));
         }
         else{
             StartCoroutine(MakeTypewriterText(S,GetPointerSymbol()));
@@ -95,6 +109,26 @@ public class TW_Regular : MonoBehaviour {
             yield return new WaitForSeconds(0.01f);
             CharIndexPlus();
             start = true;
+        }
+    }
+
+    private IEnumerator MakeTypewriterTextEventAtEnd(string ORIGINAL, string POINTER)
+    {
+        start = false;
+        if (сharIndex != ORIGINAL.Length + 1)
+        {
+            string emptyString = new string(' ', ORIGINAL.Length - POINTER.Length);
+            string TEXT = ORIGINAL.Substring(0, сharIndex);
+            if (сharIndex < ORIGINAL.Length) TEXT = TEXT + POINTER + emptyString.Substring(сharIndex);
+            gameObject.GetComponent<Text>().text = TEXT;
+            time += 1;
+            yield return new WaitForSeconds(0.01f);
+            CharIndexPlus();
+            start = true;
+        }
+        if(сharIndex == ORIGINAL.Length)
+        {
+            print("event");
         }
     }
 
@@ -159,4 +193,8 @@ public class TW_Regular : MonoBehaviour {
         }
     }
 
+    public bool CheckTextWritten()
+    {
+        return ORIGINAL_TEXT.Length>0 && сharIndex < ORIGINAL_TEXT.Length-1;
+    }
 }
