@@ -15,7 +15,7 @@ public class InteractionManager : MonoBehaviour
     private List<GameObject> interactables = new List<GameObject>();
     [SerializeField][Tooltip("Array de eventos, se llaman por orden, se llaman solo cuando ya no hay mas textos")]
     private UnityEvent[] interactionEvents = new UnityEvent[1];
-
+    [SerializeField]
     private int interactionIndex=0;
     public int InteractionIndex
     {

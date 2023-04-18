@@ -64,11 +64,7 @@ public class TW_MultiStrings_Regular_Editor : Editor
 //USADO PARA ACCEDER DESDE OTROS BOTONES A CUALQUIER STRING CONTENIDO
 [System.Serializable]
 
-public class TextCollection
-{
-    [Tooltip("Texto con el que se accede a esta coleccion de strings")]public string tag;
-    public string[] texts = new string[1];
-}
+
 
 public class TW_MultiStrings_Regular : MonoBehaviour {
 

@@ -4,7 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 
 //caracter invisible '?'
-
+public class TextCollection
+{
+    [Tooltip("Texto con el que se accede a esta coleccion de strings")] public string tag;
+    public string[] texts = new string[1];
+}
 public class InteractableObject : MonoBehaviour
 {
     #region Serialized Variables

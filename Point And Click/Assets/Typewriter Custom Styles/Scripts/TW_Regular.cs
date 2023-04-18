@@ -88,7 +88,6 @@ public class TW_Regular : MonoBehaviour {
         }
         else if (S.Contains("ㅤ"))
         {
-
             StartCoroutine(MakeTypewriterTextEventAtEnd(S, GetPointerSymbol()));
         }
         else{
@@ -128,7 +127,7 @@ public class TW_Regular : MonoBehaviour {
         }
         if(сharIndex == ORIGINAL.Length)
         {
-            print("event");
+            InteractionManager.Instance.NextEvent();
         }
     }
 
