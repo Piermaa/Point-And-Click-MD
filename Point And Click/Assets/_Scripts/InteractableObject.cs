@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-//caracter invisible '?'
+[System.Serializable]
 public class TextCollection
 {
     [Tooltip("Texto con el que se accede a esta coleccion de strings")] public string tag;

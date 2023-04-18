@@ -215,6 +215,8 @@ GameObject:
   - component: {fileID: 157130391}
   - component: {fileID: 157130390}
   - component: {fileID: 157130393}
+  - component: {fileID: 157130394}
+  - component: {fileID: 157130395}
   m_Layer: 5
   m_Name: Herb
   m_TagString: Untagged
@@ -339,6 +341,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textWritingPanel: {fileID: 0}
+  textCollections:
+  - tag: 
+    texts:
+    - "A Winkie\xB4s?\u3164"
+--- !u!95 &157130394
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157130388}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 10229d8bddebec74094b5247ce23f54e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &157130395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157130388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c8acf61428a8ed4fa5162f0350e8774, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
 --- !u!1 &259748400
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,6 +742,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 157130395}
+        m_TargetAssemblyTypeName: AnimationActivator, Assembly-CSharp
+        m_MethodName: SetFadeIn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 392106980}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
@@ -716,7 +767,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 305613673}
+        m_TargetAssemblyTypeName: InteractionManager, Assembly-CSharp
+        m_MethodName: NextEventWithDelay
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   - m_PersistentCalls:
       m_Calls: []
   interactionIndex: 0
@@ -853,6 +916,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textWritingPanel: {fileID: 124521528}
+  textCollections:
+  - tag: 
+    texts:
+    - Finalmente...
+    - Yo...
+    - "Quer\xEDa venir aqu\xED \u3164"
+  - tag: 
+    texts:
+    - "Este Winkie\xB4s?"
 --- !u!114 &392106980
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -34,5 +34,17 @@ public class InteractionManager : MonoBehaviour
     {
         print("nexxt");
         interactionEvents[interactionIndex].Invoke();
+        interactionIndex++;
+    }
+
+    public void NextEventWithDelay(float delay)
+    {
+        StartCoroutine(Delay(delay));
+    }
+
+    IEnumerator Delay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        NextEvent();
     }
 }
