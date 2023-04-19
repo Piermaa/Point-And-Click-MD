@@ -128,7 +128,7 @@ public class InteractionManager : MonoBehaviour
                 actualText = doorText;
                 break;
             case TextEmitter.Window:
-                actualText = doorText;
+                actualText = windowText;
                 break;
             case TextEmitter.Mostrador:
                 actualText = mostradorText;
