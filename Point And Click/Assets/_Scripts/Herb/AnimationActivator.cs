@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class AnimationActivator : MonoBehaviour
 {
+
+    [SerializeField] UnityEvent ue;
     [SerializeField] Animator anim;
 
     private void OnEnable()
@@ -25,4 +28,11 @@ public class AnimationActivator : MonoBehaviour
     {
         anim.SetTrigger("FadeOut");
     }
+
+    public void AnimationFinishEvent()
+    {
+        //ue.Invoke();
+        InteractionManager.Instance.NextText();
+    }
 }
+

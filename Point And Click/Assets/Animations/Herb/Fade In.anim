@@ -115,9 +115,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 1.9833333
-    functionName: OnObjectInteraction
+    functionName: AnimationFinishEvent
     data: 
-    objectReferenceParameter: {fileID: 11500000, guid: 4da19b4bb58179d449058a6d3dbfbacc, type: 3}
+    objectReferenceParameter: {fileID: 11500000, guid: 5c8acf61428a8ed4fa5162f0350e8774, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

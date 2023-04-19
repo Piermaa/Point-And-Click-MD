@@ -88,13 +88,13 @@ public class TW_MultiStrings_Regular : MonoBehaviour {
     private static string[] PointerSymbols = { "None", "<", "_", "|", ">" };
 
 
-    private void Awake()
-    {
-        foreach (var t in texts)
-        {
-            textsDic.Add(t.tag,t);
-        }
-    }
+    //private void Awake()
+    //{
+    //    foreach (var t in texts)
+    //    {
+    //        textsDic.Add(t.tag,t);
+    //    }
+    //}
 
     void Start ()
     {
