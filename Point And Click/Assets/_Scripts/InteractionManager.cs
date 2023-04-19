@@ -16,6 +16,7 @@ public class InteractionManager : MonoBehaviour
     [SerializeField][Tooltip("Array de eventos, se llaman por orden, se llaman solo cuando ya no hay mas textos")]
     private UnityEvent[] interactionEvents = new UnityEvent[1];
     [SerializeField]
+
     private int interactionIndex=0;
     public int InteractionIndex
     {
@@ -47,4 +48,6 @@ public class InteractionManager : MonoBehaviour
         yield return new WaitForSeconds(delay);
         NextEvent();
     }
+
+   
 }

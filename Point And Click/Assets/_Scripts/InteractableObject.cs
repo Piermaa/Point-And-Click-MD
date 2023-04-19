@@ -6,7 +6,7 @@ using UnityEngine.UI;
 [System.Serializable]
 public class TextCollection
 {
-    [Tooltip("Texto con el que se accede a esta coleccion de strings")] public string tag;
+    [Tooltip("Texto con el que se accede a esta coleccion de strings")][HideInInspector] public string tag;
     public string[] texts = new string[1];
 }
 public class InteractableObject : MonoBehaviour
@@ -27,7 +27,7 @@ public class InteractableObject : MonoBehaviour
     private Button button;
     private InteractionManager interactionMng;
 
-    private void Awake()
+    private void OnEnable()
     {
         interactionMng = InteractionManager.Instance;
         button = GetComponent<Button>();
@@ -46,6 +46,7 @@ public class InteractableObject : MonoBehaviour
 
     public void OnObjectInteraction()
     {
+        print("inte");
         if (textWritter.CheckTextWritten())
         {
             textWritter.SkipTypewriter();
@@ -64,6 +65,14 @@ public class InteractableObject : MonoBehaviour
            
         }
     
+    }
+
+    public void NextText()
+    {
+        textsIndex = 0;
+        textsCollectionIndex++;
+        actualCollection = textCollections[textsCollectionIndex].texts;
+        textWritter.SetAndStart(actualCollection[textsIndex]);
     }
 
 }

@@ -344,7 +344,10 @@ MonoBehaviour:
   textCollections:
   - tag: 
     texts:
-    - "A Winkie\xB4s?\u3164"
+    - "A Winkie\xB4s?"
+  - tag: 
+    texts:
+    - "Okay\u2026"
 --- !u!95 &157130394
 Animator:
   serializedVersion: 5
@@ -768,6 +771,20 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 392106979}
+        m_TargetAssemblyTypeName: InteractableObject, Assembly-CSharp
+        m_MethodName: NextText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 305613673}
         m_TargetAssemblyTypeName: InteractionManager, Assembly-CSharp
         m_MethodName: NextEventWithDelay
@@ -776,12 +793,38 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 1
+          m_FloatArgument: 3
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 157130393}
+        m_TargetAssemblyTypeName: InteractableObject, Assembly-CSharp
+        m_MethodName: NextText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 157130393}
+        m_TargetAssemblyTypeName: InteractableObject, Assembly-CSharp
+        m_MethodName: NextText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   interactionIndex: 0
 --- !u!1 &388908870
 GameObject:
@@ -877,7 +920,7 @@ GameObject:
   - component: {fileID: 392106980}
   - component: {fileID: 392106979}
   m_Layer: 5
-  m_Name: Darkness
+  m_Name: Dan/Darkness
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -919,12 +962,12 @@ MonoBehaviour:
   textCollections:
   - tag: 
     texts:
-    - Finalmente...
+    - 'Finalmente... '
     - Yo...
     - "Quer\xEDa venir aqu\xED \u3164"
   - tag: 
     texts:
-    - "Este Winkie\xB4s?"
+    - "Este Winkie\xB4s\u3164"
 --- !u!114 &392106980
 MonoBehaviour:
   m_ObjectHideFlags: 0
