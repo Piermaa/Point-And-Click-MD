@@ -140,7 +140,4 @@ public class InteractionManager : MonoBehaviour
         actualTextCollectionTexts = collection.texts;
         collection.textEvent.Invoke();
     }
-
-
-
 }
