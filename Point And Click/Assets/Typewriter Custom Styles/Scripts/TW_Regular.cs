@@ -129,7 +129,7 @@ public class TW_Regular : MonoBehaviour {
         }
         if(сharIndex == ORIGINAL.Length)
         {
-            InteractionManager.Instance.OnObjectInteraction();
+            InteractionManager.Instance.Next();
         }
     }
 

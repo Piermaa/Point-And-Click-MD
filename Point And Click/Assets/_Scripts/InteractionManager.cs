@@ -40,7 +40,6 @@ public class InteractionManager : MonoBehaviour
     [SerializeField]
     private List<TextCollection> textCollections = new List<TextCollection>();
 
-
     private TextCollection actualTextCollection;
     private TW_Regular actualTextWritter;
     private string[] actualTextCollectionTexts = new string[1];
@@ -61,6 +60,19 @@ public class InteractionManager : MonoBehaviour
     }
     #endregion
 
+    public void Next()
+    {
+        if (textIndex < actualTextCollectionTexts.Length)
+        {
+            NextText();
+        }
+        else
+        {
+            NextCollection();
+        }
+
+    }
+
     public void OnObjectInteraction()
     {
 
@@ -70,7 +82,7 @@ public class InteractionManager : MonoBehaviour
         }
         else
         {
-            if (textIndex < actualTextCollectionTexts.Length)
+            if (actualTextCollectionTexts.Length>0 && textIndex < actualTextCollectionTexts.Length )
             {
                 NextText();
             }
@@ -82,7 +94,6 @@ public class InteractionManager : MonoBehaviour
         }
 
     }
-
     public void NextText()
     {
         actualTextWritter.SetAndStart(actualTextCollectionTexts[textIndex]);
@@ -91,7 +102,6 @@ public class InteractionManager : MonoBehaviour
 
     private void NextCollection()
     {
-        //print(actualTextCollection.delayForNextEvent);
         StartCoroutine(WaitForNewCollection(actualTextCollection.delayForNextEvent));
     }
 
