@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
-using TMPro;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -35,7 +34,7 @@ public class TW_Regular_Editor : Editor
 
 public class TW_Regular : MonoBehaviour {
 
-    TextMeshProUGUI thisText;
+    Text thisText;
 
     public Action OnFinishAction;
 
@@ -52,9 +51,9 @@ public class TW_Regular : MonoBehaviour {
     private static string[] PointerSymbols = { "None", "<", "_", "|", ">" };
 
     void Start () {
-        thisText = GetComponent<TextMeshProUGUI>();
-        ORIGINAL_TEXT = gameObject.GetComponent<TextMeshProUGUI>().text;
-        gameObject.GetComponent<TextMeshProUGUI>().text = "";
+        thisText = GetComponent<Text>();
+        ORIGINAL_TEXT = gameObject.GetComponent<Text>().text;
+        gameObject.GetComponent<Text>().text = "";
         if (LaunchOnStart)
         {
             StartTypewriter();
@@ -106,7 +105,7 @@ public class TW_Regular : MonoBehaviour {
             string emptyString = new string(' ', ORIGINAL.Length - POINTER.Length);
             string TEXT = ORIGINAL.Substring(0, сharIndex);
             if (сharIndex < ORIGINAL.Length) TEXT = TEXT + POINTER + emptyString.Substring(сharIndex);
-            gameObject.GetComponent<TextMeshProUGUI>().text = TEXT;
+            gameObject.GetComponent<Text>().text = TEXT;
             time += 1;
             yield return new WaitForSeconds(0.01f);
             CharIndexPlus();
@@ -122,7 +121,7 @@ public class TW_Regular : MonoBehaviour {
             string emptyString = new string(' ', ORIGINAL.Length - POINTER.Length);
             string TEXT = ORIGINAL.Substring(0, сharIndex);
             if (сharIndex < ORIGINAL.Length) TEXT = TEXT + POINTER + emptyString.Substring(сharIndex);
-            gameObject.GetComponent<TextMeshProUGUI>().text = TEXT;
+            gameObject.GetComponent<Text>().text = TEXT;
             time += 1;
             yield return new WaitForSeconds(0.01f);
             CharIndexPlus();
@@ -143,7 +142,7 @@ public class TW_Regular : MonoBehaviour {
             string TEXT = ORIGINAL.Substring(0, сharIndex);
             if (сharIndex < ORIGINAL.Length) TEXT = TEXT + POINTER + emptyString.Substring(сharIndex);
             TEXT = InsertNewLine(TEXT, List);
-            gameObject.GetComponent<TextMeshProUGUI>().text = TEXT;
+            gameObject.GetComponent<Text>().text = TEXT;
             time += 1f;
             yield return new WaitForSeconds(0.01f);
             CharIndexPlus();

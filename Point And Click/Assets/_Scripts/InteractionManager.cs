@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
-using TMPro;
 
 //LA IDEA DE ESTE SCRIPT ES QUE SEA EL QUE DES/ACTIVE LOS INTERACTUABLES Y DES/HABILITE SUS BUTTONS
 
@@ -28,15 +27,15 @@ public enum TextEmitter
 public class InteractionManager : MonoBehaviour
 {
     [SerializeField]
-    private TextMeshProUGUI danText;
+    private Text danText;
     [SerializeField]
-    private TextMeshProUGUI herbText;
+    private Text herbText;
     [SerializeField]
-    private TextMeshProUGUI doorText;
+    private Text doorText;
     [SerializeField]
-    private TextMeshProUGUI windowText;
+    private Text windowText;
     [SerializeField]
-    private TextMeshProUGUI mostradorText;
+    private Text mostradorText;
 
     [SerializeField]
     private List<TextCollection> textCollections = new List<TextCollection>();
@@ -47,7 +46,7 @@ public class InteractionManager : MonoBehaviour
     private string[] actualTextCollectionTexts = new string[1];
     private int textIndex;
     private int textCollectionIndex;
-    private TextMeshProUGUI actualText;
+    private Text actualText;
 
     #region Singleton
     public static InteractionManager Instance;
