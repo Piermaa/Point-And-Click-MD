@@ -36,6 +36,7 @@ public class InteractionManager : MonoBehaviour
     private Text windowText;
     [SerializeField]
     private Text mostradorText;
+
     [SerializeField]
     private List<TextCollection> textCollections = new List<TextCollection>();
 
@@ -63,9 +64,9 @@ public class InteractionManager : MonoBehaviour
     public void OnObjectInteraction()
     {
 
-        if (actualTextWritter.CheckTextWritten())
+        if (!actualTextWritter.CheckTextWritten())
         {
-
+            print("didnt finish");
         }
         else
         {
@@ -90,7 +91,7 @@ public class InteractionManager : MonoBehaviour
 
     private void NextCollection()
     {
-        print(actualTextCollection.delayForNextEvent);
+        //print(actualTextCollection.delayForNextEvent);
         StartCoroutine(WaitForNewCollection(actualTextCollection.delayForNextEvent));
     }
 

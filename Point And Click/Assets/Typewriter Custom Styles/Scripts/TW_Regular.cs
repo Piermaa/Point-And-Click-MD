@@ -34,6 +34,8 @@ public class TW_Regular_Editor : Editor
 
 public class TW_Regular : MonoBehaviour {
 
+    Text thisText;
+
     public Action OnFinishAction;
 
     public bool LaunchOnStart = true;
@@ -49,6 +51,7 @@ public class TW_Regular : MonoBehaviour {
     private static string[] PointerSymbols = { "None", "<", "_", "|", ">" };
 
     void Start () {
+        thisText = GetComponent<Text>();
         ORIGINAL_TEXT = gameObject.GetComponent<Text>().text;
         gameObject.GetComponent<Text>().text = "";
         if (LaunchOnStart)
@@ -65,7 +68,6 @@ public class TW_Regular : MonoBehaviour {
 
     public void SetAndStart(string p_text)
     {
-        
         ORIGINAL_TEXT = p_text;
         StartTypewriter();
     }
@@ -194,6 +196,6 @@ public class TW_Regular : MonoBehaviour {
 
     public bool CheckTextWritten()
     {
-        return ORIGINAL_TEXT.Length>0 && сharIndex < ORIGINAL_TEXT.Length-1;
+        return  ORIGINAL_TEXT == thisText.text;
     }
 }

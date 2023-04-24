@@ -3960,7 +3960,7 @@ MonoBehaviour:
   LaunchOnStart: 0
   timeOut: 1
   pointer: 0
-  ORIGINAL_TEXT: 
+  ORIGINAL_TEXT: Finalmente...
 --- !u!114 &1120466446
 MonoBehaviour:
   m_ObjectHideFlags: 0
