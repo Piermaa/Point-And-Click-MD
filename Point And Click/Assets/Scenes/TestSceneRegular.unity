@@ -1072,14 +1072,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    waitForAnimation: 0
-    texts:
-    - "Empieza estando yo...\u3164"
-    delayForNextEvent: 0
-  - textEmitter: 2
-    textEvent:
-      m_PersistentCalls:
-        m_Calls:
         - m_Target: {fileID: 157130390}
           m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
           m_MethodName: set_enabled
@@ -1092,6 +1084,14 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    waitForAnimation: 0
+    texts:
+    - "Empieza estando yo...\u3164"
+    delayForNextEvent: 0
+  - textEmitter: 2
+    textEvent:
+      m_PersistentCalls:
+        m_Calls:
         - m_Target: {fileID: 1670417144}
           m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_MethodName: SetActive
@@ -1195,7 +1195,6 @@ MonoBehaviour:
           m_CallState: 2
     waitForAnimation: 1
     texts:
-    - 
     - "Tampoco estaba en el mostrador \u3164"
     delayForNextEvent: 2
   - textEmitter: 1
@@ -4673,7 +4672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1572102885
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5773,7 +5772,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2104780153
 RectTransform:
   m_ObjectHideFlags: 0
