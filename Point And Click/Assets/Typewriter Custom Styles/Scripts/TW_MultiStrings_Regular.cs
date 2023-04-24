@@ -147,7 +147,7 @@ public class TW_MultiStrings_Regular : MonoBehaviour {
         }
         else{
             Debug.Log("No more text");
-            //index_of_string = 0;
+            index_of_string = 0;
         }
         ORIGINAL_TEXT = MultiStrings[index_of_string];
     }
