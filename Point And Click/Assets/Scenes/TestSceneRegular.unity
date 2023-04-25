@@ -430,7 +430,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 157130388}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -1195,7 +1195,28 @@ MonoBehaviour:
           m_CallState: 2
     waitForAnimation: 1
     texts:
+    - 
     - "Tampoco estaba en el mostrador \u3164"
+    delayForNextEvent: 0
+  - textEmitter: 1
+    textEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1572102888}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    waitForAnimation: 0
+    texts:
+    - "\u3164"
     delayForNextEvent: 2
   - textEmitter: 1
     textEvent:
@@ -1237,7 +1258,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-    waitForAnimation: 1
+    waitForAnimation: 0
     texts:
     - "Aqu\xED\u3164"
     delayForNextEvent: 1
@@ -2085,6 +2106,62 @@ MonoBehaviour:
     texts:
     - "\xBFVamos?"
     delayForNextEvent: 0
+  - textEmitter: 1
+    textEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 157130397}
+          m_TargetAssemblyTypeName: PositionChanger, Assembly-CSharp
+          m_MethodName: ChangePosition
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 919013519}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 157130395}
+          m_TargetAssemblyTypeName: AnimationActivator, Assembly-CSharp
+          m_MethodName: SetFadeIn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    waitForAnimation: 1
+    texts:
+    - "\xBFVamos?"
+    delayForNextEvent: 0
+  - textEmitter: 0
+    textEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 305613673}
+          m_TargetAssemblyTypeName: InteractionManager, Assembly-CSharp
+          m_MethodName: NextScene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    waitForAnimation: 1
+    texts:
+    - "\xBFVamos?"
+    delayForNextEvent: 0
+  textIndex: 0
+  textCollectionIndex: 0
+  actualText: {fileID: 0}
+  isWaiting: 0
 --- !u!1 &339593398
 GameObject:
   m_ObjectHideFlags: 0
@@ -2789,6 +2866,30 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 305613673}
+        m_TargetAssemblyTypeName: InteractionManager, Assembly-CSharp
+        m_MethodName: Setup
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1120466445}
+        m_TargetAssemblyTypeName: TW_Regular, Assembly-CSharp
+        m_MethodName: StartTypewriter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 622169871}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -3956,7 +4057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 014f715cfa5c0e2478e44ae3559f6fc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LaunchOnStart: 0
+  LaunchOnStart: 1
   timeOut: 1
   pointer: 0
   ORIGINAL_TEXT: 
@@ -4749,7 +4850,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1572102884}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -5849,7 +5950,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104780152}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 

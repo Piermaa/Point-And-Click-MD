@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestSceneRegular.unity
     guid: 911a92607aa11234f988428ecd148372
+  - enabled: 1
+    path: Assets/Scenes/chotis.unity
+    guid: 8855b7b714a08414297fef18fd5366b3
   m_configObjects: {}

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 //LA IDEA DE ESTE SCRIPT ES QUE SEA EL QUE DES/ACTIVE LOS INTERACTUABLES Y DES/HABILITE SUS BUTTONS
 
@@ -43,11 +44,16 @@ public class InteractionManager : MonoBehaviour
     private TextCollection actualTextCollection;
     private TW_Regular actualTextWritter;
     private string[] actualTextCollectionTexts = new string[1];
-    private int textIndex;
-    private int textCollectionIndex;
+    public int textIndex;
+    
+    public int textCollectionIndex;
+
+    [SerializeField]
     private Text actualText;
 
-    #region Singleton
+    string lastText;
+
+    public bool isWaiting;
     public static InteractionManager Instance;
     private void Awake()
     {
@@ -56,9 +62,10 @@ public class InteractionManager : MonoBehaviour
             Instance = this;
         }
 
-        Setup(textCollections[0]);
+     //   Setup(0);
     }
-    #endregion
+
+ 
 
     public void Next()
     {
@@ -75,27 +82,36 @@ public class InteractionManager : MonoBehaviour
 
     public void OnObjectInteraction()
     {
-
-        if (!actualTextWritter.CheckTextWritten())
+        if (textCollectionIndex ==0 &&textIndex==0)
         {
-            print("didnt finish");
+            NextText();
         }
-        else
-        {
-            if (actualTextCollectionTexts.Length>0 && textIndex < actualTextCollectionTexts.Length )
+        else if (!isWaiting)
+        { 
+            if (!CheckCompletion())
             {
-                NextText();
+                print("didnt finish");
             }
             else
             {
-                NextCollection();
-            }
+                if (actualTextCollectionTexts.Length > 0 && textIndex < actualTextCollectionTexts.Length)
+                {
+                    NextText();
+                }
+                else
+                {
+                    NextCollection();
+                }
 
+            }
+           
         }
+      
 
     }
     public void NextText()
     {
+        lastText = actualTextCollectionTexts[textIndex];
         actualTextWritter.SetAndStart(actualTextCollectionTexts[textIndex]);
         textIndex++;
     }
@@ -107,9 +123,13 @@ public class InteractionManager : MonoBehaviour
 
     IEnumerator WaitForNewCollection(float time)
     {
-     
+        if (time>0)
+        {
+            isWaiting = true;
+        }
+       
         yield return new WaitForSeconds(time);
-
+        isWaiting = false;
         SetNextCollection();
     }
 
@@ -124,7 +144,7 @@ public class InteractionManager : MonoBehaviour
       
     }
 
-    private void Setup(TextCollection collection)
+    public void Setup(TextCollection collection)
     {
         actualTextCollection = collection;
         switch (collection.textEmitter)
@@ -150,5 +170,47 @@ public class InteractionManager : MonoBehaviour
         actualTextWritter = actualText.GetComponent<TW_Regular>();
         actualTextCollectionTexts = collection.texts;
         collection.textEvent.Invoke();
+    }
+
+
+    public void Setup(int collectionIndex)
+    {
+        TextCollection collection = textCollections[collectionIndex];
+
+        actualTextCollection = collection;
+        switch (collection.textEmitter)
+        {
+            case TextEmitter.Dan:
+                actualText = danText;
+                break;
+            case TextEmitter.Herb:
+                actualText = herbText;
+                break;
+            case TextEmitter.Door:
+                actualText = doorText;
+                break;
+            case TextEmitter.Window:
+                actualText = windowText;
+                break;
+            case TextEmitter.Mostrador:
+                actualText = mostradorText;
+                break;
+        }
+
+        textIndex = 0;
+        actualTextWritter = actualText.GetComponent<TW_Regular>();
+        actualTextCollectionTexts = collection.texts;
+        collection.textEvent.Invoke();
+    }
+
+    bool CheckCompletion()
+    {
+        print("testo a escribir: " + actualText.text + "testo escroto: " + lastText);
+        return actualText.text == lastText;
+    }
+
+    public void NextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
     }
 }
