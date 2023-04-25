@@ -9,4 +9,10 @@ public class PositionChanger : MonoBehaviour
         transform.position = newPosition.transform.position;
     }
 
+    public void ChangeCameraPosition (GameObject newPosition)
+    {
+        transform.position = newPosition.transform.position;
+        transform.rotation = newPosition.transform.rotation;
+    }
+
 }
