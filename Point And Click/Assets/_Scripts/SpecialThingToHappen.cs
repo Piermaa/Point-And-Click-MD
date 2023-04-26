@@ -34,15 +34,19 @@ public class SpecialThingToHappen : MonoBehaviour
     {
         if (interactionManager.textCollectionIndex == 14)
         {
-            buttonImage.sprite = blackOutImage;
+            //buttonImage.sprite = blackOutImage;
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+
+#else
+        Application.Quit();
+#endif
         }
 
         if (interactionManager.textCollectionIndex == 13)
         {
-            buttonImage.sprite = screamerImage;
+            //buttonImage.sprite = screamerImage;
         }
-
-        //buttonImage.sprite = wallSprite;
 
         if (interactionManager.textCollectionIndex == 8)
         {
