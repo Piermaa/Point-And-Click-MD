@@ -62,7 +62,8 @@ public class InteractionManager : MonoBehaviour
             Instance = this;
         }
 
-     //   Setup(0);
+         Setup(0);
+        //Next();
     }
 
  
@@ -111,7 +112,12 @@ public class InteractionManager : MonoBehaviour
     }
     public void NextText()
     {
-        lastText = actualTextCollectionTexts[textIndex];
+        if (actualTextCollectionTexts[textIndex]!=null)
+        {
+            lastText = actualTextCollectionTexts[textIndex];
+        }
+     
+ 
         actualTextWritter.SetAndStart(actualTextCollectionTexts[textIndex]);
         textIndex++;
     }

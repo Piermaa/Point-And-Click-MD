@@ -1053,7 +1053,8 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
     waitForAnimation: 0
-    texts: []
+    texts:
+    - "\u3164"
     delayForNextEvent: 0
   - textEmitter: 0
     textEvent:
@@ -1169,6 +1170,10 @@ MonoBehaviour:
     waitForAnimation: 0
     texts: []
     delayForNextEvent: 0
+  textIndex: 0
+  textCollectionIndex: 0
+  actualText: {fileID: 0}
+  isWaiting: 0
 --- !u!1 &339593398
 GameObject:
   m_ObjectHideFlags: 0
