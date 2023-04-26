@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 //QUE CHUSMEAS GIL!!!1!!
 [System.Serializable]
 public class Colors

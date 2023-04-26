@@ -394,6 +394,7 @@ GameObject:
   - component: {fileID: 157130394}
   - component: {fileID: 157130395}
   - component: {fileID: 157130396}
+  - component: {fileID: 157130398}
   - component: {fileID: 157130397}
   m_Layer: 5
   m_Name: Herb
@@ -589,6 +590,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2158a6f0d336aff469ea8ff17d0a2cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &157130398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157130388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a169e69efbf29684d8ebc635a955ee56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colors:
+  - colorName: ninguno
+    color: {r: 1, g: 1, b: 1, a: 0}
+  - colorName: rojo por ejemplo
+    color: {r: 0, g: 0.04942294, b: 0.6132076, a: 0}
+  - colorName: rojo por ejemplo
+    color: {r: 1, g: 0.9647059, b: 0.95686275, a: 0}
 --- !u!1 &259748400
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,6 +1034,18 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 157130398}
+          m_TargetAssemblyTypeName: ColorSwapper, Assembly-CSharp
+          m_MethodName: SwapColor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: rojo por ejemplo
             m_BoolArgument: 0
           m_CallState: 2
     waitForAnimation: 0
@@ -2389,6 +2421,7 @@ GameObject:
   - component: {fileID: 392106981}
   - component: {fileID: 392106980}
   - component: {fileID: 392106983}
+  - component: {fileID: 392106984}
   m_Layer: 5
   m_Name: Dan/Darkness
   m_TagString: Untagged
@@ -2522,6 +2555,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7604e204953ff0146b04d154ce36297b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &392106984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392106977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a169e69efbf29684d8ebc635a955ee56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colors:
+  - colorName: rojo por ejemplo
+    color: {r: 0, g: 0.04942294, b: 0.6132076, a: 0}
+  - colorName: ninguno
+    color: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1 &442207541
 GameObject:
   m_ObjectHideFlags: 0
@@ -4767,6 +4817,7 @@ GameObject:
   - component: {fileID: 1572102887}
   - component: {fileID: 1572102886}
   - component: {fileID: 1572102891}
+  - component: {fileID: 1572102892}
   m_Layer: 5
   m_Name: Mostrador
   m_TagString: Untagged
@@ -4949,6 +5000,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7604e204953ff0146b04d154ce36297b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1572102892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572102884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a169e69efbf29684d8ebc635a955ee56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colors:
+  - colorName: rojo por ejemplo
+    color: {r: 0, g: 0.04942294, b: 0.6132076, a: 0}
+  - colorName: ninguno
+    color: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1 &1595543237
 GameObject:
   m_ObjectHideFlags: 0
@@ -5098,6 +5166,7 @@ GameObject:
   - component: {fileID: 1670417147}
   - component: {fileID: 1670417146}
   - component: {fileID: 1670417151}
+  - component: {fileID: 1670417152}
   m_Layer: 5
   m_Name: Door
   m_TagString: Untagged
@@ -5280,6 +5349,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7604e204953ff0146b04d154ce36297b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1670417152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670417144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a169e69efbf29684d8ebc635a955ee56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colors:
+  - colorName: rojo por ejemplo
+    color: {r: 0, g: 0.04942294, b: 0.6132076, a: 0}
+  - colorName: ninguno
+    color: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1 &1706764964
 GameObject:
   m_ObjectHideFlags: 0
@@ -5867,6 +5953,7 @@ GameObject:
   - component: {fileID: 2104780155}
   - component: {fileID: 2104780154}
   - component: {fileID: 2104780159}
+  - component: {fileID: 2104780160}
   m_Layer: 5
   m_Name: Ventana
   m_TagString: Untagged
@@ -6049,3 +6136,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7604e204953ff0146b04d154ce36297b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2104780160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104780152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a169e69efbf29684d8ebc635a955ee56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colors:
+  - colorName: rojo por ejemplo
+    color: {r: 0, g: 0.04942294, b: 0.6132076, a: 0}
+  - colorName: ninguno
+    color: {r: 1, g: 1, b: 1, a: 0}
