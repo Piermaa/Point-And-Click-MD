@@ -66,7 +66,14 @@ public class InteractionManager : MonoBehaviour
         //Next();
     }
 
- 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            SceneManager.LoadScene(1);
+        }
+    }
+
 
     public void Next()
     {
