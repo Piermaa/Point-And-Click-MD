@@ -1046,7 +1046,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 173de7739e5e816448958356b527e016, type: 2}
+  - {fileID: 2100000, guid: 40e653059f6f2df4aa7d012c7191268d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2512,7 +2512,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 85eb4fdf36bfa50438dba51c7488a5d1, type: 2}
+  - {fileID: 2100000, guid: 0c1ea710eb986ca40aed0da83dc33bc0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2779,7 +2779,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 173de7739e5e816448958356b527e016, type: 2}
+  - {fileID: 2100000, guid: 40e653059f6f2df4aa7d012c7191268d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3849,7 +3849,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 173de7739e5e816448958356b527e016, type: 2}
+  - {fileID: 2100000, guid: 40e653059f6f2df4aa7d012c7191268d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6245,7 +6245,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e6540670d1f927c41b93c7186f741ce9, type: 2}
+  - {fileID: 2100000, guid: 40e653059f6f2df4aa7d012c7191268d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6910,7 +6910,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1ab59bc11349ca848ae92c87ec710e65, type: 2}
+  - {fileID: 2100000, guid: 4eafdc075a01b1648bb048047399b9cb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7547,7 +7547,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 173de7739e5e816448958356b527e016, type: 2}
+  - {fileID: 2100000, guid: 40e653059f6f2df4aa7d012c7191268d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7713,18 +7713,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840314116}
-  m_LocalRotation: {x: 0.22827102, y: -0.6614623, z: 0.24108228, w: 0.6724875}
-  m_LocalPosition: {x: 0, y: 0, z: -23}
+  m_LocalRotation: {x: 0.07354772, y: -0.70428866, z: 0.044777475, w: 0.7046724}
+  m_LocalPosition: {x: 0, y: 0, z: -21.2424}
   m_LocalScale: {x: 0.05473, y: 0.0279, z: 0.029830001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 469379733}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 38.752, y: -88.478, z: 1.636}
+  m_LocalEulerAnglesHint: {x: 9.598, y: -90.166, z: -2.354}
   m_AnchorMin: {x: 0, y: 0.19600001}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -13.5, y: -29.8}
-  m_SizeDelta: {x: 496.8474, y: 141.15198}
+  m_AnchoredPosition: {x: -13.7742, y: -28.9085}
+  m_SizeDelta: {x: 561.4789, y: 191.6791}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1840314118
 MonoBehaviour:
@@ -7770,7 +7770,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6fd09bd9793d1984e9f241dbf038a5bb, type: 3}
+    m_Font: {fileID: 12800000, guid: 41a4816851670c449953dc21a78c9d68, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -8763,6 +8763,10 @@ PrefabInstance:
       value: Soy una puerta, podes golpearme (?
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342652, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 41a4816851670c449953dc21a78c9d68, type: 3}
+    - target: {fileID: 4706535306529342652, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 50
       objectReference: {fileID: 0}
@@ -9453,6 +9457,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "Soy un tel\xE9fono, dame tu n\xFAmero :)"
       objectReference: {fileID: 0}
+    - target: {fileID: 4706535306529342652, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 41a4816851670c449953dc21a78c9d68, type: 3}
     - target: {fileID: 4706535306529342652, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 50
