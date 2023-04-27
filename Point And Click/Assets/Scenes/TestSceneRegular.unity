@@ -501,7 +501,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 690b864121ca5064baae15f36c2bc042, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 15211bcbae506ff45a3837b0110e2d42, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -620,7 +620,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cec2b26af4dba84b8b1ecfa345a1556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScale: {x: 0.29, y: 0.6830494, z: 0.6830494}
+  targetScale1: {x: 0.29, y: 0.6830494, z: 0.6830494}
+  targetScale2: {x: 0.261, y: 0.6147445, z: 0.6830494}
 --- !u!1 &259748400
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,7 +809,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: "viniste a ver si est\xE1 ah\xED fuera"
 --- !u!222 &264455738
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -834,8 +835,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.19600001}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -9.953903}
+  m_SizeDelta: {x: 0, y: 19.908}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &264455740
 MonoBehaviour:
@@ -865,7 +866,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cec2b26af4dba84b8b1ecfa345a1556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScale: {x: 2, y: 1, z: 1}
+  targetScale1: {x: 2, y: 1, z: 1}
+  targetScale2: {x: 2.5, y: 1, z: 1}
 --- !u!1 &305613668
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,7 +1311,7 @@ MonoBehaviour:
     - 
     - Tampoco estaba en el mostrador
     delayForNextEvent: 0
-  - textEmitter: 1
+  - textEmitter: 0
     textEvent:
       m_PersistentCalls:
         m_Calls:
@@ -1415,7 +1417,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: NoInteractuable
+            m_StringArgument: SiInteractuable
             m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1120466446}
@@ -1538,6 +1540,42 @@ MonoBehaviour:
             m_StringArgument: SiInteractuable
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 1572102892}
+          m_TargetAssemblyTypeName: ColorSwapper, Assembly-CSharp
+          m_MethodName: SwapColor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: SiInteractuable
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1670417152}
+          m_TargetAssemblyTypeName: ColorSwapper, Assembly-CSharp
+          m_MethodName: SwapColor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: SiInteractuable
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 392106984}
+          m_TargetAssemblyTypeName: ColorSwapper, Assembly-CSharp
+          m_MethodName: SwapColor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: SiInteractuable
+            m_BoolArgument: 1
+          m_CallState: 2
     waitForAnimation: 1
     texts:
     - 
@@ -1607,6 +1645,54 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 157130398}
+          m_TargetAssemblyTypeName: ColorSwapper, Assembly-CSharp
+          m_MethodName: SwapColor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: NoInteractuable
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 392106984}
+          m_TargetAssemblyTypeName: ColorSwapper, Assembly-CSharp
+          m_MethodName: SwapColor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: NoInteractuable
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1572102892}
+          m_TargetAssemblyTypeName: ColorSwapper, Assembly-CSharp
+          m_MethodName: SwapColor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: NoInteractuable
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1670417152}
+          m_TargetAssemblyTypeName: ColorSwapper, Assembly-CSharp
+          m_MethodName: SwapColor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: NoInteractuable
+            m_BoolArgument: 1
+          m_CallState: 2
     waitForAnimation: 0
     texts:
     - No era de noche
@@ -1668,7 +1754,7 @@ MonoBehaviour:
           m_MethodName: ChangeSprite
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 21300000, guid: bdcf94ecc39493c478da69dd84f67b8a, type: 3}
+            m_ObjectArgument: {fileID: 21300000, guid: 15211bcbae506ff45a3837b0110e2d42, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -2268,30 +2354,30 @@ MonoBehaviour:
         - m_Target: {fileID: 157130399}
           m_TargetAssemblyTypeName: ScaleChanger, Assembly-CSharp
           m_MethodName: ChangeScale
-          m_Mode: 1
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 264455741}
-          m_TargetAssemblyTypeName: ScaleChanger, Assembly-CSharp
-          m_MethodName: ChangeScale
-          m_Mode: 1
+          m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
+          m_MethodName: StopCoroutine
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: 1
             m_BoolArgument: 0
           m_CallState: 2
     waitForAnimation: 0
     texts:
-    - ...
+    - "\u3164"
     delayForNextEvent: 0
   - textEmitter: 0
     textEvent:
@@ -2390,6 +2476,38 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+    waitForAnimation: 1
+    texts:
+    - "\u3164"
+    delayForNextEvent: 0
+  - textEmitter: 1
+    textEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 157130397}
+          m_TargetAssemblyTypeName: PositionChanger, Assembly-CSharp
+          m_MethodName: ChangePosition
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 919013519}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 157130395}
+          m_TargetAssemblyTypeName: AnimationActivator, Assembly-CSharp
+          m_MethodName: SetFadeIn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
         - m_Target: {fileID: 392106980}
           m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
           m_MethodName: set_enabled
@@ -2400,7 +2518,31 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 1
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 392106984}
+          m_TargetAssemblyTypeName: ColorSwapper, Assembly-CSharp
+          m_MethodName: SwapColor
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: NoInteractuable
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 264455741}
+          m_TargetAssemblyTypeName: ScaleChanger, Assembly-CSharp
+          m_MethodName: ChangeScale
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 157130390}
           m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
@@ -2414,85 +2556,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 392106984}
-          m_TargetAssemblyTypeName: ColorSwapper, Assembly-CSharp
-          m_MethodName: SwapColor
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: SiInteractuable
-            m_BoolArgument: 1
-          m_CallState: 2
-    waitForAnimation: 1
-    texts:
-    - 
-    delayForNextEvent: 0
-  - textEmitter: 1
-    textEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 157130397}
-          m_TargetAssemblyTypeName: PositionChanger, Assembly-CSharp
-          m_MethodName: ChangePosition
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 919013519}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 157130395}
-          m_TargetAssemblyTypeName: AnimationActivator, Assembly-CSharp
-          m_MethodName: SetFadeIn
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
     waitForAnimation: 1
     texts:
     - "\xBFVamos?"
-    delayForNextEvent: 0
-  - textEmitter: 1
-    textEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 157130397}
-          m_TargetAssemblyTypeName: PositionChanger, Assembly-CSharp
-          m_MethodName: ChangePosition
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 919013519}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 157130395}
-          m_TargetAssemblyTypeName: AnimationActivator, Assembly-CSharp
-          m_MethodName: SetFadeIn
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-    waitForAnimation: 1
-    texts:
-    - 
     delayForNextEvent: 0
   - textEmitter: 1
     textEvent:
@@ -2510,13 +2576,13 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-    waitForAnimation: 1
+    waitForAnimation: 0
     texts:
     - 
     delayForNextEvent: 0
-  textIndex: 0
-  textCollectionIndex: 0
-  actualText: {fileID: 0}
+  textIndex: 1
+  textCollectionIndex: 30
+  actualText: {fileID: 264455737}
   isWaiting: 0
 --- !u!1 &339593398
 GameObject:
@@ -2752,7 +2818,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &392106978
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3138,7 +3204,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 609548619}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 125}
+  m_LocalPosition: {x: 0, y: -0.07, z: 89.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3164,7 +3230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &622169872
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3582,8 +3648,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.19600001}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5.4300003, y: -2.7699966}
-  m_SizeDelta: {x: -56.1, y: 5.54}
+  m_AnchoredPosition: {x: 0, y: -8.445499}
+  m_SizeDelta: {x: 0.000030518, y: 16.891}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &834985993
 MonoBehaviour:
@@ -3935,7 +4001,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919013519}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.539, y: -0.962, z: 125}
+  m_LocalPosition: {x: -0.12, y: -0.62, z: 89.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4140,8 +4206,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 34, y: -11}
-  m_SizeDelta: {x: 237.147, y: 109.036}
+  m_AnchoredPosition: {x: 34.62, y: 2.9000015}
+  m_SizeDelta: {x: 155.86, y: 79.3}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1051176158
 MonoBehaviour:
@@ -4219,7 +4285,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 80.5}
+  m_AnchoredPosition: {x: -4, y: 80.5}
   m_SizeDelta: {x: 224.1, y: 101.57}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1108170644
@@ -4398,10 +4464,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 41a4816851670c449953dc21a78c9d68, type: 3}
-    m_FontSize: 20
+    m_FontSize: 17
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -4409,7 +4475,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ola
+  m_Text: "\xBFAhora?"
 --- !u!114 &1196723490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4612,7 +4678,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1230212236}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.035, y: -1.144, z: 125}
+  m_LocalPosition: {x: 0.723, y: -0.54, z: 89.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5629,7 +5695,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823499793}
-  m_LocalRotation: {x: -0, y: -0, z: -0.00015170283, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.03409172, w: 0.9994187}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5639,7 +5705,7 @@ RectTransform:
   - {fileID: 1218769266}
   m_Father: {fileID: 2104780153}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.017}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.907}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 29, y: 91.3}
