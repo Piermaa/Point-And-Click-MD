@@ -322,10 +322,10 @@ MonoBehaviour:
   texts: []
   MultiStrings:
   - 
-  - Soy una puerta
-  - "Incre\xEDble"
-  - No podes entrar flaco
-  - "Dej\xE1 de intentar"
+  - La puerta trasera de Winkie's
+  - "Id\xE9ntica al sue\xF1o"
+  - O no...
+  - La recordaba distinta
   pointer: 0
   ORIGINAL_TEXT: 
 --- !u!1 &124521528
@@ -7905,7 +7905,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -172.37
+      value: 70.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 57.73
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_LocalScale.x
@@ -7921,43 +7925,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 237
+      value: 448
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9773439
+      value: 0.7933534
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.021935925
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.12867038
+      value: -0.60876137
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.16661838
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 88
+      value: -112
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 239
+      value: 296
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -15
+      value: -75
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -19.35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342652, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_Text
       value: Soy una puerta, podes golpearme (?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706535306529342652, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706535306529342652, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706535306529342652, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306535034049, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_Type
@@ -8580,7 +8596,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -172.37
+      value: 0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 47.61
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_LocalScale.x
@@ -8596,43 +8616,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 233.8
+      value: 487
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.97936076
+      value: 0.7933534
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.020316988
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.1289359
+      value: -0.60876137
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.15432203
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 65
+      value: -160
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 256
+      value: 195
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -15
+      value: -75
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342642, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -17.909
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306529342652, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_Text
       value: "Soy un tel\xE9fono, dame tu n\xFAmero :)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706535306529342652, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706535306529342652, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706535306529342652, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4706535306535034049, guid: 7849f1a96717e954aa3daad4b2705aba, type: 3}
       propertyPath: m_Type
@@ -8722,9 +8754,9 @@ MonoBehaviour:
   texts: []
   MultiStrings:
   - 
-  - "Esto es un tel\xE9fono"
-  - "Incre\xEDble"
-  - "No lo pod\xE9s creer"
+  - "Un tel\xE9fono p\xFAblico como cualquiera..."
+  - "Es parecido al de mi sue\xF1o"
+  - Creo...
   pointer: 0
   ORIGINAL_TEXT: 
 --- !u!1 &2127216015
