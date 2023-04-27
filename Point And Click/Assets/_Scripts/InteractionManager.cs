@@ -181,6 +181,8 @@ public class InteractionManager : MonoBehaviour
 
     public void Setup(int collectionIndex)
     {
+        print("setupped: " + collectionIndex);
+        textCollectionIndex = collectionIndex;
         TextCollection collection = textCollections[collectionIndex];
 
         actualTextCollection = collection;
